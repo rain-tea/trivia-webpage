@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trivia-by-ryan.css">
+    <title>Trivia By Ryan</title>
+  </head>
+  <body>
+      <!-- HEADER -->
+    <header id="header">
+        
+        <!-- Logo image -->
+      <img
+        id="header-img"
+        src="https://thetrainingarcade.com/wp-content/uploads/2020/06/Trivia-logo-01.png"
+        />
+
+        <!-- Navigation bar -->
+      <nav id="nav-bar">
+        <ul>
+          <!-- Clickable links to navigate different sections -->
+          <li><a class="nav-link" href="#section1">Register</a></li>
+          <li><a class="nav-link" href="#section2">Join a Session</a></li>
+          <li><a class="nav-link" href="#section3">Leaderboard</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="header-block"></div> <!-- Creates a small margin -->
+
+<!-- SECTION 1: REGISTRATION -->
+
+    <section id="section1" class="container">
+
+        <!-- Introductory YouTube video; current link is temporary -->
+      <div class="container">
+        <iframe 
+          id="video"
+          class="block"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Dkl46ladQUs?si=UAK8IWYjkUP_IzmY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+      
+        <!-- Registration form -->
+      <div class=" container">
+        <div class="register-box">
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit">
+            <h1 class="heading">Register a new account:</h1>
+
+            <!-- Username Input -->
+            <label for="username" class="block">Username:</label>
+            <input required
+              id="username"
+              class="block user-details"
+              name="username"
+              type="text"
+              pattern="[a-zA-Z0-9_]{3,20}"
+              title="Your username must be between 3-20 characters long. Only letters/numbers/underscores allowed"
+              placeholder="rain_tea"/>
+
+            <!-- Password Input -->
+            <label for="password" class="block">Password (min. 8 characters):</label>
+            <input required
+              id="password"
+              class="block user-details"
+              name="password"
+              type="password"
+              pattern="{8,}"
+              title="Your password must be a minimum of 8 characters"
+              placeholder="********"/>
+
+            <!-- Email Input -->
+            <label for="email" class="block">Email:</label>
+            <input required
+              id="email"
+              class="block user-details"
+              name="email"
+              type="email"
+              placeholder="rain_tea@yahoo.com"/>
+            <input
+              id="submit"
+              name="submit"
+              type="submit"
+              class="block"
+              value="Register" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+<!-- SECTION 2 - JOIN SESSION -->
+
+      <section id="section2" class="container">
+        <div class="join-box trivia">
+          <img src="https://theramsheadinn.com/wp-content/uploads/2023/11/Logo-Transparency.png" />
+          <button type="button" class="trivia">Join</button>
+        </div>
+        <div class="join-box kahoot">
+          <img src="https://photos.prnasia.com/prnk/20200305/2739512-1logo" />
+          <button type="button" class="kahoot">Join</button>
+        </div>
+      </section>
+
+<!-- SECTION 3 - LEADERBOARD -->
+
+      <section id="section3" class="container">
+        <h1>Global Leaderboard</h1>
+        <table>
+          <thead> <!-- Table header-->
+            <tr> 
+              <th rowspan="2">Rank</th>
+              <th rowspan="2">Username</th>
+              <th rowspan="2">Total Wins</th>
+              <th colspan="3">Trivia</th>
+              <th colspan="4">Kahoot</th>
+            </tr>
+            <tr>
+              <th class="triviacell">Wins</th>
+              <th class="triviacell">Accuracy</th>
+              <th class="triviacell">Questions<br>answered</th>
+              <th class="kahootcell">Wins</th>
+              <th class="kahootcell">Accuracy</th>
+              <th class="kahootcell">Longest<br>streak</th>
+              <th class="kahootcell">Questions<br>answered</th>
+            </tr>
+          </thead>
+          <tbody> <!-- Sample data -->
+            <tr>
+              <td>1</td>
+              <td>James</td>
+              <td>9</td>
+              <td>7</td>
+              <td>72%</td>
+              <td>556</td>
+              <td>2</td>
+              <td>56%</td>
+              <td>16</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>alberto133</td>
+              <td>6</td>
+              <td>0</td>
+              <td>33%</td>
+              <td>212</td>
+              <td>6</td>
+              <td>60%</td>
+              <td>12</td>
+              <td>825</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>rain_tea</td>
+              <td>5</td>
+              <td>3</td>
+              <td>40%</td>
+              <td>367</td>
+              <td>2</td>
+              <td>60%</td>
+              <td>6</td>
+              <td>350</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>James</td>
+              <td>9</td>
+              <td>7</td>
+              <td>72%</td>
+              <td>556</td>
+              <td>2</td>
+              <td>56%</td>
+              <td>16</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>alberto133</td>
+              <td>6</td>
+              <td>0</td>
+              <td>33%</td>
+              <td>212</td>
+              <td>6</td>
+              <td>60%</td>
+              <td>12</td>
+              <td>825</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>rain_tea</td>
+              <td>5</td>
+              <td>3</td>
+              <td>40%</td>
+              <td>367</td>
+              <td>2</td>
+              <td>60%</td>
+              <td>6</td>
+              <td>350</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>James</td>
+              <td>9</td>
+              <td>7</td>
+              <td>72%</td>
+              <td>556</td>
+              <td>2</td>
+              <td>56%</td>
+              <td>16</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>alberto133</td>
+              <td>6</td>
+              <td>0</td>
+              <td>33%</td>
+              <td>212</td>
+              <td>6</td>
+              <td>60%</td>
+              <td>12</td>
+              <td>825</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>rain_tea</td>
+              <td>5</td>
+              <td>3</td>
+              <td>40%</td>
+              <td>367</td>
+              <td>2</td>
+              <td>60%</td>
+              <td>6</td>
+              <td>350</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>James</td>
+              <td>9</td>
+              <td>7</td>
+              <td>72%</td>
+              <td>556</td>
+              <td>2</td>
+              <td>56%</td>
+              <td>16</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>alberto133</td>
+              <td>6</td>
+              <td>0</td>
+              <td>33%</td>
+              <td>212</td>
+              <td>6</td>
+              <td>60%</td>
+              <td>12</td>
+              <td>825</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>rain_tea</td>
+              <td>5</td>
+              <td>3</td>
+              <td>40%</td>
+              <td>367</td>
+              <td>2</td>
+              <td>60%</td>
+              <td>6</td>
+              <td>350</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>James</td>
+              <td>9</td>
+              <td>7</td>
+              <td>72%</td>
+              <td>556</td>
+              <td>2</td>
+              <td>56%</td>
+              <td>16</td>
+              <td>150</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>alberto133</td>
+              <td>6</td>
+              <td>0</td>
+              <td>33%</td>
+              <td>212</td>
+              <td>6</td>
+              <td>60%</td>
+              <td>12</td>
+              <td>825</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>rain_tea</td>
+              <td>5</td>
+              <td>3</td>
+              <td>40%</td>
+              <td>367</td>
+              <td>2</td>
+              <td>60%</td>
+              <td>6</td>
+              <td>350</td>
+            </tr>
+          </thead>
+        </table>
+      </section>
+
+  </body>
+</html>
